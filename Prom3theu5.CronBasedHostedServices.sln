@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prom3theu5.CronBasedHostedServices", "src\Prom3theu5.CronBasedHostedServices\Prom3theu5.CronBasedHostedServices.csproj", "{9676B95F-963C-4AE0-BCBA-EA9471DDD058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9676B95F-963C-4AE0-BCBA-EA9471DDD058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9676B95F-963C-4AE0-BCBA-EA9471DDD058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9676B95F-963C-4AE0-BCBA-EA9471DDD058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9676B95F-963C-4AE0-BCBA-EA9471DDD058}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54D3A5C4-6740-4613-B7F0-8FB1EBEF5288}
+	EndGlobalSection
+EndGlobal
