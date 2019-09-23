@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Prom3theu5.CronBasedHostedServices</name>
+    </assembly>
+    <members>
+        <member name="T:Prom3theu5.CronBasedHostedServices.CronTab">
+            <summary>
+            Helper class that provides common values for the cron expressions.
+            </summary>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Minutely">
+            <summary>
+            Returns cron expression that fires every minute.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Hourly">
+            <summary>
+            Returns cron expression that fires every hour at the first minute.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Hourly(System.Int32)">
+            <summary>
+            Returns cron expression that fires every hour at the specified minute.
+            </summary>
+            <param name="minute">The minute in which the schedule will be activated (0-59).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Daily">
+            <summary>
+            Returns cron expression that fires every day at 00:00 UTC.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Daily(System.Int32)">
+            <summary>
+            Returns cron expression that fires every day at the first minute of
+            the specified hour in UTC.
+            </summary>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Daily(System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every day at the specified hour and minute
+            in UTC.
+            </summary>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <param name="minute">The minute in which the schedule will be activated (0-59).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Weekly">
+            <summary>
+            Returns cron expression that fires every week at Monday, 00:00 UTC.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Weekly(System.DayOfWeek)">
+            <summary>
+            Returns cron expression that fires every week at 00:00 UTC of the specified
+            day of the week.
+            </summary>
+            <param name="dayOfWeek">The day of week in which the schedule will be activated.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Weekly(System.DayOfWeek,System.Int32)">
+            <summary>
+            Returns cron expression that fires every week at the first minute
+            of the specified day of week and hour in UTC.
+            </summary>
+            <param name="dayOfWeek">The day of week in which the schedule will be activated.</param>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Weekly(System.DayOfWeek,System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every week at the specified day
+            of week, hour and minute in UTC.
+            </summary>
+            <param name="dayOfWeek">The day of week in which the schedule will be activated.</param>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <param name="minute">The minute in which the schedule will be activated (0-59).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Monthly">
+            <summary>
+            Returns cron expression that fires every month at 00:00 UTC of the first
+            day of month.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Monthly(System.Int32)">
+            <summary>
+            Returns cron expression that fires every month at 00:00 UTC of the specified
+            day of month.
+            </summary>
+            <param name="day">The day of month in which the schedule will be activated (1-31).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Monthly(System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every month at the first minute of the
+            specified day of month and hour in UTC.
+            </summary>
+            <param name="day">The day of month in which the schedule will be activated (1-31).</param>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Monthly(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every month at the specified day of month,
+            hour and minute in UTC.
+            </summary>
+            <param name="day">The day of month in which the schedule will be activated (1-31).</param>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <param name="minute">The minute in which the schedule will be activated (0-59).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Yearly">
+            <summary>
+            Returns cron expression that fires every year on Jan, 1st at 00:00 UTC.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Yearly(System.Int32)">
+            <summary>
+            Returns cron expression that fires every year in the first day at 00:00 UTC
+            of the specified month.
+            </summary>
+            <param name="month">The month in which the schedule will be activated (1-12).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Yearly(System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every year at 00:00 UTC of the specified
+            month and day of month.
+            </summary>
+            <param name="month">The month in which the schedule will be activated (1-12).</param>
+            <param name="day">The day of month in which the schedule will be activated (1-31).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Yearly(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every year at the first minute of the
+            specified month, day and hour in UTC.
+            </summary>
+            <param name="month">The month in which the schedule will be activated (1-12).</param>
+            <param name="day">The day of month in which the schedule will be activated (1-31).</param>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Yearly(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns cron expression that fires every year at the specified month, day,
+            hour and minute in UTC.
+            </summary>
+            <param name="month">The month in which the schedule will be activated (1-12).</param>
+            <param name="day">The day of month in which the schedule will be activated (1-31).</param>
+            <param name="hour">The hour in which the schedule will be activated (0-23).</param>
+            <param name="minute">The minute in which the schedule will be activated (0-59).</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.CronTab.Never">
+            <summary>
+            Returns cron expression that never fires. Specifically 31st of February
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Prom3theu5.CronBasedHostedServices.ScopedProcessor">
+            <summary>
+            Class ScopedProcessor.
+            Implements the <see cref="T:Prom3theu5.CronBasedHostedServices.BackgroundService" />.
+            </summary>
+            <seealso cref="T:Prom3theu5.CronBasedHostedServices.BackgroundService" />
+        </member>
+        <member name="F:Prom3theu5.CronBasedHostedServices.ScopedProcessor._serviceScopeFactory">
+            <summary>
+            The service scope factory
+            </summary>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.ScopedProcessor.ProcessInScope(System.IServiceProvider)">
+            <summary>
+            Processes the in scope.
+            </summary>
+            <param name="serviceProvider">The service provider.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.ScopedProcessor.#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)">
+            <summary>
+            Initialises a new instance of the <see cref="T:Prom3theu5.CronBasedHostedServices.ScopedProcessor"/> class.
+            </summary>
+            <param name="serviceScopeFactory">The service scope factory.</param>
+        </member>
+        <member name="M:Prom3theu5.CronBasedHostedServices.ScopedProcessor.Process">
+            <summary>
+            Processes this instance.
+            </summary>
+        </member>
+    </members>
+</doc>
